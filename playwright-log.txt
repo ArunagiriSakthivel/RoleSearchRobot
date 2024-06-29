@@ -1,0 +1,85 @@
+{"level":30,"time":"2024-06-29T21:19:55.454Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Listening on 64012"}
+{"level":30,"time":"2024-06-29T21:19:55.902Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:19:55.903Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:19:55.908Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:19:55.908Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:19:55.920Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-06-29T21:19:56.644Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-06-29T21:19:56.653Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-06-29T21:19:56.653Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-29T21:19:56.653Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Trace file: "}
+{"level":30,"time":"2024-06-29T21:19:56.668Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Changed active context"}
+{"level":30,"time":"2024-06-29T21:19:56.668Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method newContext"}
+{"level":30,"time":"2024-06-29T21:19:56.674Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-06-29T21:19:56.674Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-29T21:19:56.984Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Video path: undefined"}
+{"level":30,"time":"2024-06-29T21:19:56.985Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Changed active page"}
+{"level":30,"time":"2024-06-29T21:19:58.902Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method newPage"}
+{"level":30,"time":"2024-06-29T21:19:58.910Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method click"}
+{"level":30,"time":"2024-06-29T21:19:58.910Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Strict mode is enabled, find Locator with xpath=//button[@id='cc-acceptAll-btn'] in page."}
+{"level":30,"time":"2024-06-29T21:19:59.052Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method click"}
+{"level":30,"time":"2024-06-29T21:19:59.056Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method click"}
+{"level":30,"time":"2024-06-29T21:19:59.056Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Strict mode is enabled, find Locator with xpath=//a[@class='icon-primart-cta primary-cta'] in page."}
+{"level":30,"time":"2024-06-29T21:19:59.190Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method click"}
+{"level":30,"time":"2024-06-29T21:20:00.845Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Changed active page"}
+{"level":30,"time":"2024-06-29T21:20:00.853Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method scrollToElement"}
+{"level":30,"time":"2024-06-29T21:20:00.853Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Strict mode is enabled, find Locator with xpath=//div[37]//li[1]//div[1]//a[1] in page."}
+{"level":30,"time":"2024-06-29T21:20:05.380Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method scrollToElement"}
+{"level":30,"time":"2024-06-29T21:20:05.390Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method click"}
+{"level":30,"time":"2024-06-29T21:20:05.390Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Strict mode is enabled, find Locator with xpath=//div[37]//li[1]//div[1]//a[1] in page."}
+{"level":30,"time":"2024-06-29T21:20:05.512Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method click"}
+{"level":30,"time":"2024-06-29T21:20:05.539Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:05.540Z","pid":23848,"hostname":"ArunDharshTanvi","Take screenshot with options: ":{"path":"C:\\Automation_RAF\\browser\\screenshot\\Carrerpage.png.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-06-29T21:20:05.709Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:05.722Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.729Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.735Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.739Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.745Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.749Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.754Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.762Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.768Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.771Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:05.902Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:05.903Z","pid":23848,"hostname":"ArunDharshTanvi","Take screenshot with options: ":{"path":"C:\\Automation_RAF\\browser\\screenshot\\Carrerpage1.png.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-06-29T21:20:06.079Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:06.090Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.096Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.100Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.103Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.110Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.112Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.117Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.121Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.209Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.276Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2024-06-29T21:20:06.293Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:06.293Z","pid":23848,"hostname":"ArunDharshTanvi","Take screenshot with options: ":{"path":"C:\\Automation_RAF\\browser\\screenshot\\Carrerpage2.png.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-06-29T21:20:07.256Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-06-29T21:20:07.265Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-06-29T21:20:07.319Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Removed page=da15fab8-8ca6-4e52-a68f-4c186be4bee4 from context=0075471a-297b-4852-b26b-81ea3729139b page stack"}
+{"level":30,"time":"2024-06-29T21:20:07.329Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Removed page=0bae40f7-abb1-4291-9382-16fa953fcb1f from context=0075471a-297b-4852-b26b-81ea3729139b page stack"}
+{"level":30,"time":"2024-06-29T21:20:07.581Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:9991:59)
+    at PlaywrightServer.setTimeout (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:10237:57)
+    at handleUnary (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2024-06-29T21:20:07.662Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:20:07.662Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:9470:15)
+    at PlaywrightServer.getActiveBrowser (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:9991:59)
+    at PlaywrightServer.setTimeout (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\index.js:10237:57)
+    at handleUnary (c:\ProgramData\robocorp\ht\c3cdf7c_b1f3c24_1c0bc041\lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2024-06-29T21:20:07.882Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:20:07.883Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-29T21:20:10.282Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-06-29T21:20:10.282Z","pid":23848,"hostname":"ArunDharshTanvi","msg":"End of node method closeAllBrowsers"}

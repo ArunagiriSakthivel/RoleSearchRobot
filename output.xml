@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240630 00:19:53.930" rpa="false" schemaversion="4">
+<suite id="s1" name="Tasks" source="c:\Automation_RAF\TestRobot\tasks.robot">
+<test id="s1-t1" name="RoleSearch Test" line="17">
+<kw name="New Browser" library="Browser">
+<arg>browser=${browser}</arg>
+<arg>headless=${False}</arg>
+<arg>args=["--start-maximized"]</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240630 00:19:55.918" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Automation_RAF\\browser\\traces\\0932a303-0886-4572-8f31-111fe99eec84"}</msg>
+<msg timestamp="20240630 00:19:56.648" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Automation_RAF\\browser\\traces\\0932a303-0886-4572-8f31-111fe99eec84"}</msg>
+<status status="PASS" starttime="20240630 00:19:55.916" endtime="20240630 00:19:56.648"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport=${None}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20240630 00:19:56.655" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg timestamp="20240630 00:19:56.677" level="INFO">Successfully created context. </msg>
+<msg timestamp="20240630 00:19:56.677" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<status status="PASS" starttime="20240630 00:19:56.655" endtime="20240630 00:19:56.677"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240630 00:19:58.911" level="INFO">Successfully initialized new page object and opened url: https://www.multitude.com/careers</msg>
+<status status="PASS" starttime="20240630 00:19:56.677" endtime="20240630 00:19:58.912"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button[@id='cc-acceptAll-btn']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 00:19:58.912" endtime="20240630 00:19:59.061"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//a[@class='icon-primart-cta primary-cta']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 00:19:59.061" endtime="20240630 00:19:59.193"/>
+</kw>
+<kw name="Switch Page" library="Browser">
+<arg>NEW</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<msg timestamp="20240630 00:19:59.193" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg timestamp="20240630 00:20:00.854" level="INFO">Activated new page page=da15fab8-8ca6-4e52-a68f-4c186be4bee4</msg>
+<status status="PASS" starttime="20240630 00:19:59.193" endtime="20240630 00:20:00.854"/>
+</kw>
+<kw name="Scroll To Element" library="Browser">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" starttime="20240630 00:20:00.854" endtime="20240630 00:20:05.390"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 00:20:05.390" endtime="20240630 00:20:05.520"/>
+</kw>
+<kw name="Get Url" library="Browser">
+<var>${current url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<msg timestamp="20240630 00:20:05.522" level="INFO">${current url} = https://multitude.bamboohr.com/careers/1131</msg>
+<status status="PASS" starttime="20240630 00:20:05.522" endtime="20240630 00:20:05.530"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 00:20:05.718" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 00:20:05.536" endtime="20240630 00:20:05.719"/>
+</kw>
+<kw name="Scroll By" library="Browser">
+<arg>${None}</arg>
+<arg>600</arg>
+<arg>0</arg>
+<arg>auto</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page relative from current position by the given values.</doc>
+<msg timestamp="20240630 00:20:05.736" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:05.749" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:05.769" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:05.769" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:05.778" level="INFO">JavaScript executed successfully.</msg>
+<status status="PASS" starttime="20240630 00:20:05.723" endtime="20240630 00:20:05.778"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage1.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 00:20:06.087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage1.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage1.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 00:20:05.903" endtime="20240630 00:20:06.087"/>
+</kw>
+<kw name="Scroll To" library="Browser">
+<arg>${None}</arg>
+<arg>bottom</arg>
+<arg>left</arg>
+<arg>auto</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<msg timestamp="20240630 00:20:06.111" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:06.111" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:06.129" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:06.129" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 00:20:06.285" level="INFO">JavaScript executed successfully.</msg>
+<status status="PASS" starttime="20240630 00:20:06.087" endtime="20240630 00:20:06.285"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage2.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 00:20:07.264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage2.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage2.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 00:20:06.293" endtime="20240630 00:20:07.264"/>
+</kw>
+<kw name="Close Browser" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20240630 00:20:07.590" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20240630 00:20:07.264" endtime="20240630 00:20:07.590"/>
+</kw>
+<kw name="Should Contain Any" library="BuiltIn">
+<arg>${current url}</arg>
+<arg>@{Job Role}</arg>
+<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
+<msg timestamp="20240630 00:20:07.591" level="FAIL">'https://multitude.bamboohr.com/careers/1131' does not contain any of 'Software Test Engineer'</msg>
+<status status="FAIL" starttime="20240630 00:20:07.591" endtime="20240630 00:20:07.591"/>
+</kw>
+<status status="FAIL" starttime="20240630 00:19:55.901" endtime="20240630 00:20:07.591">'https://multitude.bamboohr.com/careers/1131' does not contain any of 'Software Test Engineer'</status>
+</test>
+<status status="FAIL" starttime="20240630 00:19:53.939" endtime="20240630 00:20:07.668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240630 07:44:00.720" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\eeear\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="New browser">
+<arg>browser=${browser}</arg>
+<arg>headless=${False}</arg>
+<msg timestamp="20240630 07:44:01.538" level="FAIL">No keyword with name 'New browser' found.</msg>
+<status status="FAIL" starttime="20240630 07:44:01.538" endtime="20240630 07:44:01.539"/>
+</kw>
+<kw name="New Page">
+<arg>url=${url}</arg>
+<status status="NOT RUN" starttime="20240630 07:44:01.541" endtime="20240630 07:44:01.541"/>
+</kw>
+<kw name="Click">
+<arg>xpath=//a[@class='icon-primart-cta primary-cta']</arg>
+<status status="NOT RUN" starttime="20240630 07:44:01.544" endtime="20240630 07:44:01.544"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240630 07:44:01.544" endtime="20240630 07:44:01.544"/>
+</kw>
+<kw name="New Page">
+<status status="NOT RUN" starttime="20240630 07:44:01.549" endtime="20240630 07:44:01.549"/>
+</kw>
+<kw name="Scroll By">
+<arg>${None}</arg>
+<arg>300</arg>
+<arg>0</arg>
+<arg>auto</arg>
+<status status="NOT RUN" starttime="20240630 07:44:01.551" endtime="20240630 07:44:01.551"/>
+</kw>
+<kw name="Click">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<status status="NOT RUN" starttime="20240630 07:44:01.553" endtime="20240630 07:44:01.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240630 07:44:01.553" endtime="20240630 07:44:01.553"/>
+</kw>
+<status status="PASS" starttime="20240630 07:44:00.736" endtime="20240630 08:17:41.995"/>
+</kw>
+<status status="PASS" starttime="20240630 07:44:00.736" endtime="20240630 08:17:41.995"/>
+</test>
+<status status="PASS" starttime="20240630 07:44:00.720" endtime="20240630 08:17:41.997"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
