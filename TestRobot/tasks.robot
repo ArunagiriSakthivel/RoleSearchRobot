@@ -20,8 +20,8 @@ RoleSearch Test
     Click    xpath=//a[@class='icon-primart-cta primary-cta']  #Search button locator  
     Switch Page    NEW   
     Scroll To Element    xpath=//div[37]//li[1]//div[1]//a[1]  #Scroll to Role link  
-    Click    xpath=//div[37]//li[1]//div[1]//a[1]   
-    Sleep    5
+    Click    xpath=//div[37]//li[1]//div[1]//a[1] 
+    Wait For Elements State    xpath=//div[contains(@class,'fab-Card fab-Card--sizeFull fab-Card--withoutBottomGradient')]//span[@class='jss-f156'][normalize-space()='Apply for This Job']    visible    #Smart wait for condition of element visible
     Take Screenshot    Carrerpage.png                          #Role Page screenshot
     Scroll By    ${None}    600    0    auto
     Take Screenshot    Carrerpage1.png
