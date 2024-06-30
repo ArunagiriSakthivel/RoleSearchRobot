@@ -1,51 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240630 07:44:00.720" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240630 16:42:47.356" rpa="false" schemaversion="4">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\eeear\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Read Excel">
+<var>${browser}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>1</arg>
+<msg timestamp="20240630 16:42:47.682" level="FAIL">No keyword with name 'Read Excel' found.</msg>
+<status status="FAIL" starttime="20240630 16:42:47.681" endtime="20240630 16:42:47.682"/>
+</kw>
+<kw name="Read Excel">
+<var>${url}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>2</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.683" endtime="20240630 16:42:47.684"/>
+</kw>
+<kw name="Read Excel">
+<var>${Job Role}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>3</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
+</kw>
 <kw name="New browser">
 <arg>browser=${browser}</arg>
 <arg>headless=${False}</arg>
-<msg timestamp="20240630 07:44:01.538" level="FAIL">No keyword with name 'New browser' found.</msg>
-<status status="FAIL" starttime="20240630 07:44:01.538" endtime="20240630 07:44:01.539"/>
+<arg>args=["--start-maximized"]</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
+</kw>
+<kw name="New Context">
+<arg>viewport=${None}</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
 </kw>
 <kw name="New Page">
 <arg>url=${url}</arg>
-<status status="NOT RUN" starttime="20240630 07:44:01.541" endtime="20240630 07:44:01.541"/>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
+</kw>
+<kw name="Click">
+<arg>xpath=//button[@id='cc-acceptAll-btn']</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
 </kw>
 <kw name="Click">
 <arg>xpath=//a[@class='icon-primart-cta primary-cta']</arg>
-<status status="NOT RUN" starttime="20240630 07:44:01.544" endtime="20240630 07:44:01.544"/>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240630 07:44:01.544" endtime="20240630 07:44:01.544"/>
+<kw name="Switch Page">
+<arg>NEW</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
 </kw>
-<kw name="New Page">
-<status status="NOT RUN" starttime="20240630 07:44:01.549" endtime="20240630 07:44:01.549"/>
-</kw>
-<kw name="Scroll By">
-<arg>${None}</arg>
-<arg>300</arg>
-<arg>0</arg>
-<arg>auto</arg>
-<status status="NOT RUN" starttime="20240630 07:44:01.551" endtime="20240630 07:44:01.551"/>
+<kw name="Scroll To Element">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.684" endtime="20240630 16:42:47.684"/>
 </kw>
 <kw name="Click">
 <arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
-<status status="NOT RUN" starttime="20240630 07:44:01.553" endtime="20240630 07:44:01.553"/>
+<status status="NOT RUN" starttime="20240630 16:42:47.692" endtime="20240630 16:42:47.692"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
+<kw name="Wait For Elements State">
+<arg>xpath=//div[contains(@class,'fab-Card fab-Card--sizeFull fab-Card--withoutBottomGradient')]//span[@class='jss-f156'][normalize-space()='Apply for This Job']</arg>
+<arg>visible</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.693" endtime="20240630 16:42:47.694"/>
+</kw>
+<kw name="Take Screenshot">
+<arg>Carrerpage.png</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.695" endtime="20240630 16:42:47.695"/>
+</kw>
+<kw name="Scroll By">
+<arg>${None}</arg>
+<arg>600</arg>
+<arg>0</arg>
+<arg>auto</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.695" endtime="20240630 16:42:47.695"/>
+</kw>
+<kw name="Take Screenshot">
+<arg>Carrerpage1.png</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.695" endtime="20240630 16:42:47.695"/>
+</kw>
+<kw name="Scroll To">
+<arg>${None}</arg>
+<arg>bottom</arg>
+<arg>left</arg>
+<arg>auto</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.695" endtime="20240630 16:42:47.695"/>
+</kw>
+<kw name="Take Screenshot">
+<arg>Carrerpage2.png</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<kw name="Get Url">
+<var>${current url}</var>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<if>
+<branch type="IF" condition="${current url} == ${Job Role}">
+<kw name="Write Excel">
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<kw name="Write Excel Cell">
+<arg>2</arg>
 <arg>4</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240630 07:44:01.553" endtime="20240630 07:44:01.553"/>
+<arg>"PASS"</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
 </kw>
-<status status="PASS" starttime="20240630 07:44:00.736" endtime="20240630 08:17:41.995"/>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</branch>
+<branch type="ELSE">
+<kw name="Write Excel">
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
 </kw>
-<status status="PASS" starttime="20240630 07:44:00.736" endtime="20240630 08:17:41.995"/>
+<kw name="Write Excel Cell">
+<arg>2</arg>
+<arg>4</arg>
+<arg>"FAIL"</arg>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</branch>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</if>
+<kw name="Should Contain Any" library="BuiltIn">
+<arg>${current url}</arg>
+<arg>${Job Role}</arg>
+<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
+<status status="NOT RUN" starttime="20240630 16:42:47.700" endtime="20240630 16:42:47.700"/>
+</kw>
+<status status="PASS" starttime="20240630 16:42:47.372" endtime="20240630 16:42:59.287"/>
+</kw>
+<status status="PASS" starttime="20240630 16:42:47.372" endtime="20240630 16:42:59.288"/>
 </test>
-<status status="PASS" starttime="20240630 07:44:00.720" endtime="20240630 08:17:41.997"/>
+<status status="PASS" starttime="20240630 16:42:47.356" endtime="20240630 16:42:59.289"/>
 </suite>
 <statistics>
 <total>
