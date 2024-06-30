@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.12 on win32)" generated="20240630 18:32:33.527" rpa="false" schemaversion="4">
+<suite id="s1" name="Tasks" source="c:\Automation_RAF\TestRobot\tasks.robot">
+<test id="s1-t1" name="RoleSearch Test" line="18">
+<kw name="Read Excel">
+<var>${browser}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240630 18:32:34.992" endtime="20240630 18:32:35.011"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.011"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240630 18:32:35.011" level="INFO">${data} = Chromium</msg>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.011"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.011"/>
+</kw>
+<return>
+<value>${data}</value>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.011"/>
+</return>
+<msg timestamp="20240630 18:32:35.011" level="INFO">${browser} = Chromium</msg>
+<status status="PASS" starttime="20240630 18:32:34.992" endtime="20240630 18:32:35.011"/>
+</kw>
+<kw name="Read Excel">
+<var>${url}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.023"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.023" endtime="20240630 18:32:35.023"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240630 18:32:35.023" level="INFO">${data} = https://www.multitude.com/careers</msg>
+<status status="PASS" starttime="20240630 18:32:35.023" endtime="20240630 18:32:35.023"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.023" endtime="20240630 18:32:35.023"/>
+</kw>
+<return>
+<value>${data}</value>
+<status status="PASS" starttime="20240630 18:32:35.023" endtime="20240630 18:32:35.023"/>
+</return>
+<msg timestamp="20240630 18:32:35.023" level="INFO">${url} = https://www.multitude.com/careers</msg>
+<status status="PASS" starttime="20240630 18:32:35.011" endtime="20240630 18:32:35.023"/>
+</kw>
+<kw name="Read Excel">
+<var>${Job Role}</var>
+<arg>${FilePath}</arg>
+<arg>Data</arg>
+<arg>2</arg>
+<arg>3</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240630 18:32:35.047" endtime="20240630 18:32:35.056"/>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<arg>${sheetname}</arg>
+<doc>Returns a page from the current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.058" endtime="20240630 18:32:35.058"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${data}</var>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20240630 18:32:35.058" level="INFO">${data} = Software Test Engineer</msg>
+<status status="PASS" starttime="20240630 18:32:35.058" endtime="20240630 18:32:35.058"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240630 18:32:35.058" endtime="20240630 18:32:35.058"/>
+</kw>
+<return>
+<value>${data}</value>
+<status status="PASS" starttime="20240630 18:32:35.058" endtime="20240630 18:32:35.058"/>
+</return>
+<msg timestamp="20240630 18:32:35.058" level="INFO">${Job Role} = Software Test Engineer</msg>
+<status status="PASS" starttime="20240630 18:32:35.047" endtime="20240630 18:32:35.058"/>
+</kw>
+<kw name="New Browser" library="Browser">
+<arg>browser=${browser}</arg>
+<arg>headless=${False}</arg>
+<arg>args=["--start-maximized"]</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240630 18:32:35.058" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Automation_RAF\\browser\\traces\\a3db5b34-6e99-47b3-8936-f7b5666f1e38"}</msg>
+<msg timestamp="20240630 18:32:35.692" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Automation_RAF\\browser\\traces\\a3db5b34-6e99-47b3-8936-f7b5666f1e38"}</msg>
+<status status="PASS" starttime="20240630 18:32:35.058" endtime="20240630 18:32:35.692"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport=${None}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20240630 18:32:35.714" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg timestamp="20240630 18:32:35.735" level="INFO">Successfully created context. </msg>
+<msg timestamp="20240630 18:32:35.735" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<status status="PASS" starttime="20240630 18:32:35.714" endtime="20240630 18:32:35.735"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>url=${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240630 18:32:39.118" level="INFO">Successfully initialized new page object and opened url: https://www.multitude.com/careers</msg>
+<status status="PASS" starttime="20240630 18:32:35.738" endtime="20240630 18:32:39.119"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//button[@id='cc-acceptAll-btn']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 18:32:39.123" endtime="20240630 18:32:39.270"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//a[@class='icon-primart-cta primary-cta']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 18:32:39.276" endtime="20240630 18:32:39.359"/>
+</kw>
+<kw name="Switch Page" library="Browser">
+<arg>NEW</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Switches the active browser page to another open page by ``id`` or ``NEW``.</doc>
+<msg timestamp="20240630 18:32:39.368" level="INFO">Switching to page NEW,context CURRENT, browser CURRENT</msg>
+<msg timestamp="20240630 18:32:41.168" level="INFO">Activated new page page=933f3610-278f-4faf-8373-f076ab061ea4</msg>
+<status status="PASS" starttime="20240630 18:32:39.368" endtime="20240630 18:32:41.168"/>
+</kw>
+<kw name="Scroll To Element" library="Browser">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" starttime="20240630 18:32:41.170" endtime="20240630 18:32:44.977"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>xpath=//div[37]//li[1]//div[1]//a[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240630 18:32:44.979" endtime="20240630 18:32:45.115"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>xpath=//div[contains(@class,'fab-Card fab-Card--sizeFull fab-Card--withoutBottomGradient')]//span[@class='jss-f156'][normalize-space()='Apply for This Job']</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240630 18:32:46.010" level="INFO">Waited for Element with selector xpath=//div[contains(@class,'fab-Card fab-Card--sizeFull fab-Card--withoutBottomGradient')]//span[@class='jss-f156'][normalize-space()='Apply for This Job'] at state visible</msg>
+<status status="PASS" starttime="20240630 18:32:45.120" endtime="20240630 18:32:46.012"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 18:32:46.211" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 18:32:46.022" endtime="20240630 18:32:46.215"/>
+</kw>
+<kw name="Scroll By" library="Browser">
+<arg>${None}</arg>
+<arg>600</arg>
+<arg>0</arg>
+<arg>auto</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page relative from current position by the given values.</doc>
+<msg timestamp="20240630 18:32:46.247" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.248" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.268" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.268" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.418" level="INFO">JavaScript executed successfully.</msg>
+<status status="PASS" starttime="20240630 18:32:46.216" endtime="20240630 18:32:46.418"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage1.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 18:32:46.669" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage1.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage1.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 18:32:46.418" endtime="20240630 18:32:46.669"/>
+</kw>
+<kw name="Scroll To" library="Browser">
+<arg>${None}</arg>
+<arg>bottom</arg>
+<arg>left</arg>
+<arg>auto</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<msg timestamp="20240630 18:32:46.698" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.698" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.714" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.714" level="INFO">JavaScript executed successfully.</msg>
+<msg timestamp="20240630 18:32:46.722" level="INFO">JavaScript executed successfully.</msg>
+<status status="PASS" starttime="20240630 18:32:46.672" endtime="20240630 18:32:46.722"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>Carrerpage2.png</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240630 18:32:46.987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/Carrerpage2.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/Carrerpage2.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240630 18:32:46.787" endtime="20240630 18:32:46.987"/>
+</kw>
+<kw name="Get Url" library="Browser">
+<var>${current url}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<msg timestamp="20240630 18:32:46.994" level="INFO">${current url} = https://multitude.bamboohr.com/careers/1131</msg>
+<status status="PASS" starttime="20240630 18:32:46.987" endtime="20240630 18:32:46.994"/>
+</kw>
+<kw name="Close Browser" library="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20240630 18:32:47.218" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20240630 18:32:46.997" endtime="20240630 18:32:47.218"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${Job Role}&quot; != &quot;${current url}&quot;">
+<kw name="Write Excel Fail">
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20240630 18:32:47.232" endtime="20240630 18:32:47.246"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>2</arg>
+<arg>4</arg>
+<arg>FAIL</arg>
+<doc>Writes value to the cell.</doc>
+<status status="PASS" starttime="20240630 18:32:47.246" endtime="20240630 18:32:47.246"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>2</arg>
+<arg>5</arg>
+<arg>Link for Job Position Software Test Engineer not present in WEB URL</arg>
+<doc>Writes value to the cell.</doc>
+<status status="PASS" starttime="20240630 18:32:47.246" endtime="20240630 18:32:47.246"/>
+</kw>
+<kw name="Save Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<doc>Saves the current document to disk.</doc>
+<status status="PASS" starttime="20240630 18:32:47.246" endtime="20240630 18:32:47.278"/>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20240630 18:32:47.278" endtime="20240630 18:32:47.278"/>
+</kw>
+<status status="PASS" starttime="20240630 18:32:47.232" endtime="20240630 18:32:47.278"/>
+</kw>
+<status status="PASS" starttime="20240630 18:32:47.231" endtime="20240630 18:32:47.278"/>
+</branch>
+<branch type="ELSE">
+<kw name="Write Excel Pass">
+<status status="NOT RUN" starttime="20240630 18:32:47.278" endtime="20240630 18:32:47.278"/>
+</kw>
+<status status="NOT RUN" starttime="20240630 18:32:47.278" endtime="20240630 18:32:47.278"/>
+</branch>
+<status status="PASS" starttime="20240630 18:32:47.231" endtime="20240630 18:32:47.278"/>
+</if>
+<kw name="Should Contain Any" library="BuiltIn">
+<arg>${current url}</arg>
+<arg>${Job Role}</arg>
+<doc>Fails if ``container`` does not contain any of the ``*items``.</doc>
+<msg timestamp="20240630 18:32:47.278" level="FAIL">'https://multitude.bamboohr.com/careers/1131' does not contain any of 'Software Test Engineer'</msg>
+<status status="FAIL" starttime="20240630 18:32:47.278" endtime="20240630 18:32:47.278"/>
+</kw>
+<status status="FAIL" starttime="20240630 18:32:34.992" endtime="20240630 18:32:47.278">'https://multitude.bamboohr.com/careers/1131' does not contain any of 'Software Test Engineer'</status>
+</test>
+<status status="FAIL" starttime="20240630 18:32:33.535" endtime="20240630 18:32:47.357"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
